@@ -11,7 +11,7 @@ logger = logging.getLogger(__name__)
 
 
 class Blockchain:
-    """Simple in-memory blockchain without mining or proof-of-work."""
+   
 
     def __init__(self) -> None:
         logger.info("Initializing blockchain with genesis block.")

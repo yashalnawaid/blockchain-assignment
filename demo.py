@@ -28,8 +28,8 @@ def run_demo() -> None:
     print(f"Is blockchain valid? {chain.is_valid()}")
 
     logger.info("Tampering with data in an earlier block.")
-    # Tamper with the data of the second block (index 1).
-    block_to_tamper = chain._chain[1]  # noqa: SLF001 - used intentionally for demo
+    
+    block_to_tamper = chain._chain[1]  
     block_to_tamper.data = {"sender": "Alice", "receiver": "Bob", "amount": 1000}
 
     print("\n=== Tampered Blockchain ===")
